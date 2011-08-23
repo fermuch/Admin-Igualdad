@@ -24,7 +24,7 @@ Instalación
 Luego de instalar los requerimientos, es necesario realizar lo siguiente:
 
 1. clonar repositorio a carpeta donde se quiera usar `cd /var/www/; git clone https://github.com/fermuch/Admin-Igualdad.git sistema`
-2. dar permisos de escritura y lectura a la carpeta system/sqlite y sus archivos. `''' chmod -R 664 /var/www/sistema/system/sqlite`
+2. dar permisos de escritura y lectura a la carpeta system/sqlite y sus archivos. `chmod -R 664 /var/www/sistema/system/sqlite`
 
 
 **Nota:**
