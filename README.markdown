@@ -36,5 +36,6 @@ Es un problema de permisos de SQLite. La carpeta (system/sqlite) debe ser parte 
 Contacto
 --------
 
-¿Necesitás ayuda? ¿No podés instalar el sistema? ¿Querés comunicarme algo?
-Para todo ello, podés escribirme un correo a *fermuch arroba gmail punto com*
+###¿Necesitás ayuda? ¿No podés instalar el sistema? ¿Querés comunicarme algo?
+
+Para todo ello, podés escribirme un correo a **fermuch arroba gmail punto com**
