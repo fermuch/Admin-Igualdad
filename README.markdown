@@ -17,6 +17,7 @@ Requerimientos
 2. PHP5
 3. SQLite3
 4. PHP5-SQLite3
+5. GIT
 
 Instalación
 -----------
@@ -24,7 +25,7 @@ Instalación
 Luego de instalar los requerimientos, es necesario realizar lo siguiente:
 
 1. clonar repositorio a carpeta donde se quiera usar `cd /var/www/; git clone https://github.com/fermuch/Admin-Igualdad.git sistema`
-2. dar permisos de escritura y lectura a la carpeta system/sqlite y sus archivos. `chmod -R 664 /var/www/sistema/system/sqlite`
+2. dar permisos de escritura y lectura a la carpeta system/sqlite y sus archivos. `chmod -R 777 /var/www/sistema/system/sqlite`
 
 
 **Nota:**
@@ -33,9 +34,17 @@ Es un problema de permisos de SQLite. La carpeta (system/sqlite) debe ser parte 
 
 
 
+Preguntas Frecuentes
+--------------------
+
+**¿Cómo ingreso al panel de administración?**
+Para ingresar, se debe presionar en el texto de Pi que aparece abajo a la derecha (es muy pequeño). El usuario y contraseña por defecto es: Usuario: root  Contraseña: toor
+
+
+
 Contacto
 --------
 
-###¿Necesitás ayuda? ¿No podés instalar el sistema? ¿Querés comunicarme algo?
+###¿Necesitás ayuda? ¿No podés instalar el sistema? ¿Querés comunicarme algo? ¿Querés que añada algo al sistema?
 
 Para todo ello, podés escribirme un correo a **fermuch arroba gmail punto com**
