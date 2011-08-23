@@ -1,0 +1,59 @@
+/*
+* Fuente de ubuntu
+*/
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('ubuntu.woff') format('woff');
+}
+
+body {
+  font-family: 'Ubuntu',tahoma,verdana,sans-serif !important;
+  background-color: #CDEB8B;
+}
+center h1{
+  margin-top: 23px;
+  margin-bottom:5px;
+}
+#buscador input[type='text'] {
+  width:350px !important;
+  height: 30px !important;
+  border: 1px dotted #08C !important;
+  padding: 5px !important;
+  font-family: 'Ubuntu' !important;
+  font-size: 1.5em !important;
+}
+#buscador input[type='submit'] {
+  height: 30px !important;
+  padding: 6px;
+}
+#buscador {
+  margin-top: 30px;
+  margin-bottom: 50px !important;
+}
+#pi {
+  font-family: 'sans-serif';
+  display:block;
+  position:fixed;
+  bottom:3px;
+  right:3px;
+  font-size:1em;
+  color:white;
+}
+#pi a:link,a:visited,a:active,a:hover {text-decoration: none; color:black;}
+
+#ultima_net{
+  text-align:center;
+  width: 100%;
+  z-index: -3;
+  font-size: 3em;
+  display:block;
+  position:fixed;
+  bottom:3px;
+  color: green;
+}
+
+#ultima_net em{
+  text-decoration: underline;
+}

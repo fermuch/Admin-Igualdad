@@ -1,0 +1,15 @@
+.add{
+  background-image: url('../img/icons/add.png');
+}
+.rem{
+  background-image: url('../img/icons/delete.png');
+}
+.cancel{
+  background-image: url('../img/icons/cancel.png');
+}
+.search{
+  background-image: url('../img/icons/find.png');
+}
+.magnifier{
+  background-image: url('../img/icons/magnifier.png');
+}

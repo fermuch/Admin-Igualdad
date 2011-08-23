@@ -1,0 +1,31 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote{margin:0;padding:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('ubuntu.woff') format('woff');
+}
+
+body {
+  background: #CDEB8B url('http://localhost/verde/assets/img/fsm.png') no-repeat top right fixed !important;;
+  font-family: 'Ubuntu',tahoma,verdana,sans-serif;
+}
+h1 {
+  font-size: 2em;
+}
+header{
+  text-align:center;
+  margin-left: 0;
+  margin-top: 10px;
+}
+#admin_panel {
+    width:auto;
+    margin: 0 auto 20px auto;
+    padding: 0 0 0 0;
+    text-align:center;
+}
+#admin_panel a:visited,a:hover,a:link,a:active{
+  text-decoration:none;
+  color: #00a;
+}

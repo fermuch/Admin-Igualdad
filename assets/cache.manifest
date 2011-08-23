@@ -1,0 +1,23 @@
+CACHE MANIFEST
+# rev 6
+CACHE:
+css/admin_head.css
+css/extjs_icons.css
+css/main.css
+css/tables.css
+
+img/icons/add.png
+img/icons/cancel.png
+img/icons/delete.png
+img/icons/find.png
+img/icons/magnifier.png
+favicon.ico
+
+js/ext-4.0.1/bootstrap.js
+js/ext-4.0.1/ext.js
+js/ext-4.0.1/ext-all.js
+js/ext-4.0.1/ext-all-debug-w-comments.js
+js/ext-4.0.1/locale/ext-lang-es.js
+
+NETWORK:
+*
