@@ -197,7 +197,7 @@ class Admin extends Controller {
       $db = $this->db->query('SELECT * FROM `feedback` ORDER BY id DESC');
       $tmpl = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" id="table_listado">' );
       $this->table->set_template($tmpl);
-      $this->table->set_heading('id','Nombre','Sugerencia');
+      $this->table->set_heading('id','Alumno','Sugerencia');
       $table = $this->table->generate($db->result_array());
 
       $data = array(
