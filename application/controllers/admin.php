@@ -250,4 +250,18 @@ class Admin extends Controller {
           )
         );
       }
+      
+      function users(){
+        $db = $this->db->query('SELECT id,username FROM `users` ORDER BY id ASC');
+        $tmpl = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" id="table_listado">' );
+        $this->table->set_template($tmpl);
+        $this->table->set_heading('id','Nombre'); 
+        $table = $this->table->generate($db->result_array());
+
+        $data = array(
+          'title'=>'Control de usuarios',
+          'table'=>$table
+        );
+        $this->load->view('admin/users',$data);
+      }
 }

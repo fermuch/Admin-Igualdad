@@ -19,6 +19,7 @@
 <div id="admin_panel">
 <!--  <a href="<?=base_url()?>admin/">Panel de administración</a> / -->
   <a href="<?=base_url()?>admin/alumnos">Listado de alumnos</a> /
+  <a href="<?=base_url()?>admin/users">Control de usuarios</a> /
   <a href="<?=base_url()?>admin/feedback">Feedback</a> /
   <a href="<?=base_url()?>admin/stats">Estadísticas</a> /
   <a href="<?=base_url()?>login/logout">Cerrar sesión</a>
