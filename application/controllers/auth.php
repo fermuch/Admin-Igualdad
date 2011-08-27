@@ -11,9 +11,7 @@ class Auth extends Controller{
   }
 
   function login(){
-    $this->load->view('auth/head');
     $this->load->view('auth/login');
-    $this->load->view('auth/foot');
   }
 
 

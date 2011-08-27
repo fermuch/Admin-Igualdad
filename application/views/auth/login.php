@@ -1,3 +1,4 @@
+<?=$this->load->view('auth/head');?>
 <script type="text/javascript">
 Ext.Loader.setConfig({
   enabled: true
@@ -83,3 +84,4 @@ Ext.onReady(function(){
   win.show();
 }); //END Ext.onReady
 </script>
+<?=$this->load->view('auth/foot');?>
