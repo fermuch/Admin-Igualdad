@@ -38,7 +38,7 @@ center h1{
   position:fixed;
   bottom:3px;
   right:3px;
-  font-size:1em;
+  font-size:1.5em;
   color:white;
 }
 #pi a:link,a:visited,a:active,a:hover {text-decoration: none; color:black;}

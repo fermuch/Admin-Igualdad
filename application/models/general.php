@@ -286,6 +286,11 @@ class General extends Model{
         /* END CRUD */
         
         function stats($what = null){
+        /*
+        * TODO:
+        *  por ahora, busca *todos* los estados. Se tienen que listar sólo
+        *  los estados que están en vigencia.
+        */
           switch($what){
             case "ingresada":
               $sql = "SELECT COUNT(*) FROM estado WHERE estado = 1;";
