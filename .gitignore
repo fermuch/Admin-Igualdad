@@ -1,1 +1,4 @@
-system/sqlite/database.sqlite
+*.sqlite
+*.db
+*.*~
+*.bak
