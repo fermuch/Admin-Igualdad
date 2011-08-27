@@ -53,8 +53,8 @@ Ext.onReady(function(){
         fields: [
             {name: 'id', type: 'int'},
             'nombre','apellido',
-            {name: 'cuil', type: 'int'},
-            {name: 'serie', type: 'int'},
+            {name: 'cuil'},
+            {name: 'serie'},
             'estado',
             'motivo',
             'nota'
