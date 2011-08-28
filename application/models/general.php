@@ -31,7 +31,7 @@ class General extends Model{
         
         function list_estado($limit = 30, $index = null, $date_format = 'd/m/Y'){
           $return = null;
-          $query = $this->db->query('SELECT * FROM estado ORDER BY fecha DESC');
+          $query = $this->db->query('SELECT * FROM estado ORDER BY fecha ASC');
           foreach($query->result_array() as $row){
           
               /* obtener nombre entero del alumno */
