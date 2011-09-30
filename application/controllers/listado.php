@@ -40,7 +40,7 @@ class Listado extends Controller {
           if($data):
             $tmpl = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" id="table_listado">' );
             $this->table->set_template($tmpl);
-            $this->table->set_heading('id','Nombre','Apellido','CUIL','Nº de serie','Estado');
+            $this->table->set_heading('id','Nombre','Apellido','CUIL','Nº de serie','Fecha','Estado');
             $table = $this->table->generate($data);
           
             $config = array(

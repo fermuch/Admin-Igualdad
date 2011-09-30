@@ -167,6 +167,8 @@ Ext.onReady(function(){
                 hideTrigger:true,
                 autoShow: true,
                 autoSelect: true,
+                queryDelay: 10,
+                minChars: 0,
                 //anchor: '100%'
                 listConfig: {
                   loadingText: 'Buscando...',

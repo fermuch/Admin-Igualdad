@@ -180,9 +180,11 @@ class General extends Model{
           # OBTENER ESTADO
           foreach($return as $id){
             $estado[$i] = null;
-            $query = $this->db->query('SELECT estado FROM estado WHERE alumno = '.$id['id'].' ORDER BY fecha DESC LIMIT 1');
+            $fecha[$i]  = null;
+            $query = $this->db->query('SELECT estado,fecha FROM estado WHERE alumno = '.$id['id'].' ORDER BY fecha DESC LIMIT 1');
             foreach($query->result_array() as $row){
                 $estado[$i] = $row['estado'];
+                $return[$i]['fecha'] = date('d/m/Y', $row['fecha']);
             }
 
             $query = null;
