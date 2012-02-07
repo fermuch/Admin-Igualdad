@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="<?=base_url();?>assets/favicon.ico">
   <link rel="stylesheet" href="<?=base_url();?>assets/css/tables.css" type="text/css" media="screen" charset="utf-8" />
 <!--  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'> -->
-  <link rel="stylesheet" href="<?=base_url();?>assets/css/main.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="<?=base_url();?>assets/css/main2.css" type="text/css" media="screen" charset="utf-8" />
   
   <!-- ExtJS -->
   <link rel="stylesheet" href="<?=base_url();?>assets/js/ext-4.0.1/resources/css/ext-all.css" type="text/css" media="screen" charset="utf-8" />

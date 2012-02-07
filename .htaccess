@@ -1,5 +1,5 @@
 AddType text/cache-manifest .manifest
 
 RewriteEngine on
-RewriteCond $1 !^(index\.php|public|user_guide|robots\.txt|assets)
+RewriteCond $1 !^(index\.php|public|user_guide|robots\.txt|assets|template)
 RewriteRule ^(.*)$ index.php?/$1 [L] 

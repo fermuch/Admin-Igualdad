@@ -24,13 +24,12 @@ class Admin extends Controller {
         
         function alumnos(){
           $data = $this->general->list_estado_admin();
-          $estados = $this->general->list_estados();
                 
           $config = array(
             'title'=>'Listado',
+            'menu' => 1,
             'data'=>$data
           );
-          
           $this->load->view('admin/listado',$config);
         }
         
@@ -195,14 +194,11 @@ class Admin extends Controller {
     
     function feedback(){
       $db = $this->db->query('SELECT * FROM `feedback` ORDER BY id DESC');
-      $tmpl = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" id="table_listado">' );
-      $this->table->set_template($tmpl);
-      $this->table->set_heading('id','Alumno','Sugerencia');
-      $table = $this->table->generate($db->result_array());
 
       $data = array(
         'title'=>'Feedback',
-        'table'=>$table
+		'menu' => 3,
+		'data' => $db->result_array()
       );
       $this->load->view('admin/feedback',$data);
     }
@@ -217,6 +213,7 @@ class Admin extends Controller {
        
        $data = array(
           'title'=>'Estadísticas',
+		  'menu' => 4,
           'data' =>$stats
         );
         $this->load->view('admin/estadisticas',$data);
@@ -252,6 +249,9 @@ class Admin extends Controller {
       }
       
       function users(){
+      /*
+      * TODO: Modificar usuarios
+      */
         $db = $this->db->query('SELECT id,username FROM `users` ORDER BY id ASC');
         #$tmpl = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" id="table_listado">' );
         #$this->table->set_template($tmpl);
@@ -261,8 +261,13 @@ class Admin extends Controller {
         
         $data = array(
           'title'=>'Control de usuarios',
+		  'menu' => 2,
           'table'=>$table
         );
         $this->load->view('admin/users',$data);
+      }
+      
+      function export($what){
+        
       }
 }

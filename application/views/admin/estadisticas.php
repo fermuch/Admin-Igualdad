@@ -47,6 +47,29 @@ panel1 = Ext.create('widget.panel', {
       tbar: [{
         xtype: 'label',
         text: 'Total de ingresos: <?=$data['total'];?>'
+      },'->',{
+        xtype: 'label',
+        text: 'Exportar:'
+      },{
+        xtype: 'button',
+        text: 'Ingresadas',
+        id: 'expt_ingresadas'
+      },{
+        xtype: 'button',
+        text: 'Revisión',
+        id: 'expt_revision'
+      },{
+        xtype: 'button',
+        text: 'Servicio Técnico',
+        id: 'expt_st'
+      },{
+        xtype: 'button',
+        text: 'Listas',
+        id: 'expt_listas'
+      },{
+        xtype: 'button',
+        text: 'Retiradas',
+        id: 'expt_retiradas'
       }],
       items: {
           xtype: 'chart',

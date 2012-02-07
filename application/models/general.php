@@ -316,4 +316,29 @@ class General extends Model{
         $query = $this->db->query($sql);
         return($query->data[0]["COUNT(*)"]);
       }
+      
+      function export($what){
+        switch($what){
+          case "ingresada":
+            $sql = "SELECT COUNT(*) FROM estado WHERE estado = 1;";
+          break;
+          case "revision":
+            $sql = "SELECT COUNT(*) FROM estado WHERE estado = 2;";
+          break;
+          case "st":
+            $sql = "SELECT COUNT(*) FROM estado WHERE estado = 3;";
+          break;
+          case "lista":
+            $sql = "SELECT COUNT(*) FROM estado WHERE estado = 4;";
+          break;
+          case "retirada":
+            $sql = "SELECT COUNT(*) FROM estado WHERE estado = 5;";
+          break;
+          default:
+            $sql = "SELECT COUNT(*) FROM estado;";
+          break;
+        }# end switch
+        
+        
+      }
 }
