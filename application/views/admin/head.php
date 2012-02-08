@@ -5,6 +5,7 @@
 	<meta http-equiv="content-language" content="es" />
 	<meta name="robots" content="noindex,nofollow" />
 	<link rel="icon" type="image/x-icon" href="<?=base_url();?>assets/favicon.ico">
+	<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="<?=base_url();?>assets/css/ui-lightness/jquery-ui-1.8.17.custom.css" /> <!-- JQUERY UI -->
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="<?=base_url();?>assets/css/reset.css" /> <!-- RESET -->
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="<?=base_url();?>assets/css/main.css" /> <!-- MAIN STYLE SHEET -->
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="<?=base_url();?>assets/css/2col.css" title="2col" /> <!-- DEFAULT: 2 COLUMNS -->
@@ -16,8 +17,7 @@
 	<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.js"></script>
 	<script type="text/javascript" src="<?=base_url();?>assets/js/switcher.js"></script>
 	<script type="text/javascript" src="<?=base_url();?>assets/js/toggle.js"></script>
-	<script type="text/javascript" src="<?=base_url();?>assets/js/ui.core.js"></script>
-	<script type="text/javascript" src="<?=base_url();?>assets/js/ui.tabs.js"></script>
+	<script type="text/javascript" src="<?=base_url();?>assets/js/jquery-ui-1.8.17.custom.min.js"></script>
 	<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title><?=$title?></title>
 </head>
@@ -41,7 +41,7 @@
 			<div class="padding box">
 
 				<!-- Logo (Max. width = 200px) -->
-				<p id="logo"><a href="#"><img src="tmp/logo.gif" alt="Sistema Verde" title="Sistema Verde" /></a></p>
+				<p id="logo"><a href="#"><img src="<?=base_url();?>assets/img/nyancat.png" alt="Sistema Verde" title="Sistema Verde" /></a></p>
 
 				<!-- Search -->
 				<!--<form action="#" method="get" id="search">

@@ -1,6 +1,11 @@
 <? $this->load->view('admin/head',$title); ?>
+<style>
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+</style>
 <script type="text/javascript">
-$(document).ready(function(){
+$(function() {
   $('#alumnos').dataTable({
 	"oLanguage": {
 	  "sProcessing":   "Procesando...",
@@ -20,15 +25,38 @@ $(document).ready(function(){
 	  }
 	}
   });
-});
-</script>
+  
 
+  
+  
+  $( "#dialog-form" ).dialog({
+	autoOpen: false,
+	height: 400,
+	width: 350,
+	modal: true,
+	buttons: {
+	  "Añadir/Modificar": function() {
+		// comprobaciones y esas mierdas
+	  },
+	  Cancel: function() {
+		$( this ).dialog( "close" );
+	  }
+	},
+	close: function() {
+	  //allFields.val( "" ).removeClass( "ui-state-error" );
+	}
+  });
+
+  $("#boton-dialog").button().click(function() {
+	$( "#dialog-form" ).dialog( "open" );
+  });
+}); //END document.ready
+</script>
 <!-- Content (Right Column) -->
 <div id="content" class="box">
 	<h1>Listado de Alumnos</h1>
-	<p class="msg info">Puede que ocurran errores inesperados. Esta página aún se encuentra en <strong>beta</strong>.</p>
+	<p class="msg warning">Este sistema aún se encuentra en <strong>beta</strong>.</p>
 	<!-- Table -->
-	<h3 class="tit">Listado de Alumnos</h3>
 	<table class="nostyle" id="alumnos">
 		<thead>
 		  <tr>
@@ -57,5 +85,30 @@ $(document).ready(function(){
 		  <?endforeach;?>
 		</tbody>
 	</table>
+	<center><input style="margin-top:30px;height:45px;width:150px;" id="boton-dialog" type="button" value="Añadir Alumno"/></center>
+
+
+<div id="dialog-form" title="Añadir/Modificar Alumno">
+	<p class="msg info">Todos los campos son requeridos.</p>
+	<form>
+	<fieldset>
+		<label for="apellido">Apellido</label>
+		<input type="text" name="apellido" id="apellido" class="text ui-widget-content ui-corner-all" />
+		<label for="nombre">Nombre</label>
+		<input type="text" name="nombre" id="nombre" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="cuil">CUIL</label>
+		<input type="text" name="cuil" id="cuil" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="serie">Serie</label>
+		<input type="text" name="serie" id="serie" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="estado">Nombre</label>
+		<input type="text" name="estado" id="estado" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="motivo">Motivo</label>
+		<input type="text" name="motivo" id="motivo" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="nota">Nota</label>
+		<input type="text" name="nota" id="nota" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
+
 </div> <!-- /content -->
 <? $this->load->view('admin/foot'); ?>
