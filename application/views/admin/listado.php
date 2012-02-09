@@ -1,7 +1,7 @@
 <? $this->load->view('admin/head',$title); ?>
 <style>
 label, input { display:block; }
-input.text { margin-bottom:12px; width:95%; padding: .4em; }
+input, select, textarea { margin-bottom:12px; width:95%; padding: .4em; }
 fieldset { padding:0; border:0; margin-top:25px; }
 </style>
 <script type="text/javascript">
@@ -35,11 +35,11 @@ $(function() {
 	width: 350,
 	modal: true,
 	buttons: {
+	  "Cancelar": function() {
+		$(this).dialog("close");
+	  },
 	  "Añadir/Modificar": function() {
 		// comprobaciones y esas mierdas
-	  },
-	  Cancel: function() {
-		$( this ).dialog( "close" );
 	  }
 	},
 	close: function() {
@@ -100,12 +100,18 @@ $(function() {
 		<input type="text" name="cuil" id="cuil" value="" class="text ui-widget-content ui-corner-all" />
 		<label for="serie">Serie</label>
 		<input type="text" name="serie" id="serie" value="" class="text ui-widget-content ui-corner-all" />
-		<label for="estado">Nombre</label>
-		<input type="text" name="estado" id="estado" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="estado">Estado</label>
+		<select name="estado">
+		  <option value="1">Ingresada</option>
+		  <option value="2">Revisión</option>
+		  <option value="3">Servicio Técnico</option>
+		  <option value="4">Lista</option>
+		  <option value="5">Retirada</option>
+		</select>
 		<label for="motivo">Motivo</label>
 		<input type="text" name="motivo" id="motivo" value="" class="text ui-widget-content ui-corner-all" />
 		<label for="nota">Nota</label>
-		<input type="text" name="nota" id="nota" value="" class="text ui-widget-content ui-corner-all" />
+		<textarea name="nota" id="nota" value="" class="text ui-widget-content ui-corner-all"></textarea>
 	</fieldset>
 	</form>
 </div>
