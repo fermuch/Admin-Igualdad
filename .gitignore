@@ -1,4 +1,4 @@
-*.sqlite
-*.db
-*.*~
-*.bak
+*/*.sqlite
+*/*.db
+*/*.*~
+*/*.bak
